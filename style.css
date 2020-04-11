@@ -1,30 +1,105 @@
-.container {
-    padding: 0px 150px 50px 150px;
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
     background-color: #0A052E;
     background-image: url(assets/swirl.png);
     background-blend-mode: soft-light;
-    background-size: contain;
-}
-.row {
-    display: flex;
-    justify-content: center;
-    padding: 20px 0px 30px 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0 20px;
 }
 
-.col-left {
-    text-align: center;
-    padding-right: 10px
+footer {
+    height: 100px;
 }
 
-.col-right {
+h1 {
+    color: var(--lp-pink);
+}
+
+h3 {
+    color: #fff;
+}
+
+p {
+    color: #fff;
+    opacity: 80%;
+}
+
+a {
+    text-decoration: none;
+}
+
+:root {
+    --lp-pink: #FEBCFD;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1180px;
+    }
+
+    .grid {
+        grid-template-columns: repeat(auto-fit, minmax(520px, 1fr));
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .grid {
+        grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    }
+}
+
+@media screen and (max-width: 979px) {
+    .container {
+        margin-left: 0;
+        margin-right: 0;
+        width: auto;
+    }
+
+    .grid {
+        grid-template-columns: repeat(auto-fit, minmax(264px, 1fr));
+    }
+}
+
+.grid {
+    margin-top: 2em;
+    display: grid;
+    align-items: center;
+    row-gap: 1.5em;
+    column-gap: 50px;
+}
+
+.card {
     text-align: center;
-    padding-left: 10px;
+}
+
+.overlay {
+    opacity: 0;
+    transition: 0.5s ease-in;
+    background: var(--lp-pink);
+}
+
+a:hover .overlay {
+    opacity: .8;
 }
 
 .thumbnail-img {
-    border: 0.5px solid #fff;
+    border: 1px solid #fff;
     border-radius: 8px;
-    width: 80%;
+    width: 100%;
+}
+
+/* .thumbnail-img:hover {
+    opacity: 50%;
+} */
+
+.thumbnail-subtitle:hover {
+    color: var(--lp-pink);
 }
 
 .rocket {
@@ -46,28 +121,16 @@
     width: 50%;
 }
 
-/* Text Styling */
-
-h1 {
-    font-family: 'Lato', sans-serif;
-    color: #FEBCFD;
-}
-
-h3 {
-    font-family: 'Lato', sans-serif;
-    color: #fff;
-}
-
-p {
-    font-family: 'Lato', sans-serif;
-    color: #fff;
-    opacity: 80%;
-}
-
 /* ICONS */
-
 .socials {
     color: #fff;
     font-size: 25px;
+}
+
+.socials:hover {
+    color: var(--lp-pink);
+}
+
+#facebook {
     letter-spacing: 20px;
 }
