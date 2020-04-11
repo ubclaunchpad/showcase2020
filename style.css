@@ -84,11 +84,11 @@ a {
     width: 100%;
 }
 
-.thumbnail-img:hover {
+.card:hover .thumbnail-img {
     opacity: 50%;
 }
 
-.thumbnail-subtitle:hover {
+.card:hover .thumbnail-subtitle {
     color: var(--lp-pink);
 }
 
