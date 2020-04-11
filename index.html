@@ -1,105 +1,96 @@
 <!doctype html>
 <html>
-  <head>
-    <title>UBC Launch Pad Showcase 2020</title>
 
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="src.js"></script>
-  </head>
+<head>
+  <title>UBC Launch Pad Showcase 2020</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="description" content="UBC Launch Pad Showcase 2020">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" href="assets/white-rocket.ico" type="image/x-icon" />
+</head>
 
-  <body class="container">
+<body>
+  <div class="container">
     <nav class="navigation-bar">
-        <div class="nav-logo">
-          <a href=#><img class="rocket" src="assets/white-rocket.png"></a>
-        </div>
-        <div class="nav-socials">
-            <a href="https://www.facebook.com/ubclaunchpad" class="socials"><i class="fa fa-facebook"></i></a>
-            <a href="https://www.instagram.com/ubclaunchpad/" class="socials"><i class="fa fa-instagram"></i></a>
-        </div>
+      <div class="nav-logo">
+        <a href=#><img class="rocket" src="assets/white-rocket.png"></a>
+      </div>
+      <div class="nav-socials">
+        <a id="facebook" href="https://www.facebook.com/ubclaunchpad" class="socials"><i class="fa fa-facebook"></i></a>
+        <a id="instagram" href="https://www.instagram.com/ubclaunchpad/" class="socials"><i
+            class="fa fa-instagram"></i></a>
+      </div>
     </nav>
-
-
+    <main>
       <h1>UBC LAUNCH PAD SHOWCASE 2020</h1>
       <p>We had 8 project teams this year with 50 developers, designers, and strategy members.
-          These projects were initially going to be presented at the UBC Launch Pad showcase, but due to these unforseen circumstances, we've switched our final presentations into videos and writeups.
+        These projects were initially going to be presented at the UBC Launch Pad showcase, but due to these unforseen
+        circumstances, we've switched our final presentations into videos and writeups.
       </p>
-
-      <!-- FIRST ROW-->
-      <div class="row">
-         <!-- TEAM 1-->
-         <div class="col-left">
-             <a href="https://github.com/">
-               <img onmouseover="opacityLow(this)" onmouseout="opacityFull(this)" class="thumbnail-img" src="assets/Thumbnail.png"></br>
-               <h3 class="thumbnail-subtitle" onmouseover="turnPink(this)" onmouseout="turnWhite(this)">PROJECT NAME</h3>
-           </a>
-          </div>
-    
+      <!-- TEAM 1-->
+      <div class="grid">
+        <div class="card">
+          <a href="https://github.com/">
+            <img class="thumbnail-img" src="assets/Thumbnail.png">
+            <h3 class="thumbnail-subtitle">PROJECT NAME</h3>
+          </a>
+        </div>
         <!-- TEAM 2-->
-        <div class="col-right">
-            <a href="https://github.com/">
-                <img onmouseover="opacityLow(this)" onmouseout="opacityFull(this)" class="thumbnail-img" src="assets/Thumbnail.png"></br>
-                <h3 class="thumbnail-subtitle" onmouseover="turnPink(this)" onmouseout="turnWhite(this)">PROJECT NAME</h3>
-            </a>   
+        <div class="card">
+          <a href="https://github.com/">
+            <img class="thumbnail-img" src="assets/Thumbnail.png">
+            <h3 class="thumbnail-subtitle">PROJECT NAME</h3>
+          </a>
         </div>
-      </div>
-
-      <!-- SECOND ROW-->
-      <div class="row">
         <!-- TEAM 3-->
-        <div class="col-left">
-            <a href="https://github.com/">
-              <img onmouseover="opacityLow(this)" onmouseout="opacityFull(this)" class="thumbnail-img" src="assets/Thumbnail.png"></br>
-              <h3 class="thumbnail-subtitle" onmouseover="turnPink(this)" onmouseout="turnWhite(this)">PROJECT NAME</h3>
+        <div class="card">
+          <a href="https://github.com/">
+            <img class="thumbnail-img" src="assets/Thumbnail.png">
+            <h3 class="thumbnail-subtitle">PROJECT NAME</h3>
           </a>
         </div>
-      <!-- TEAM 4-->
-      <div class="col-right">
+        <!-- TEAM 4-->
+        <div class="card">
           <a href="https://github.com/">
-              <img onmouseover="opacityLow(this)" onmouseout="opacityFull(this)" class="thumbnail-img" src="assets/Thumbnail.png"></br>
-              <h3 class="thumbnail-subtitle" onmouseover="turnPink(this)" onmouseout="turnWhite(this)">PROJECT NAME</h3>
-          </a>   
-      </div>
-    </div>
-
-    <!-- THIRD ROW-->
-    <div class="row">
+            <img class="thumbnail-img" src="assets/Thumbnail.png">
+            <h3 class="thumbnail-subtitle">PROJECT NAME</h3>
+          </a>
+        </div>
         <!-- TEAM 5-->
-        <div class="col-left">
-            <a href="https://github.com/">
-              <img onmouseover="opacityLow(this)" onmouseout="opacityFull(this)" class="thumbnail-img" src="assets/Thumbnail.png"></br>
-              <h3 class="thumbnail-subtitle" onmouseover="turnPink(this)" onmouseout="turnWhite(this)">PROJECT NAME</h3>
+        <div class="card">
+          <a href="https://github.com/">
+            <img class="thumbnail-img" src="assets/Thumbnail.png">
+            <h3 class="thumbnail-subtitle">PROJECT NAME</h3>
           </a>
         </div>
-
-      <!-- TEAM 6-->
-      <div class="col-right">
+        <!-- TEAM 6-->
+        <div class="card">
           <a href="https://github.com/">
-              <img onmouseover="opacityLow(this)" onmouseout="opacityFull(this)" class="thumbnail-img" src="assets/Thumbnail.png"></br>
-              <h3 class="thumbnail-subtitle" onmouseover="turnPink(this)" onmouseout="turnWhite(this)">PROJECT NAME</h3>
-          </a>   
-      </div>
-    </div>
-
-    <!-- FOURTH ROW-->
-    <div class="row">
+            <img class="thumbnail-img" src="assets/Thumbnail.png">
+            <h3 class="thumbnail-subtitle">PROJECT NAME</h3>
+          </a>
+        </div>
         <!-- TEAM 7-->
-        <div class="col-left">
-            <a href="https://github.com/">
-              <img onmouseover="opacityLow(this)" onmouseout="opacityFull(this)" class="thumbnail-img" src="assets/Thumbnail.png"></br>
-              <h3 class="thumbnail-subtitle" onmouseover="turnPink(this)" onmouseout="turnWhite(this)">PROJECT NAME</h3>
+        <div class="card">
+          <a href="https://github.com/">
+            <img class="thumbnail-img" src="assets/Thumbnail.png">
+            <h3 class="thumbnail-subtitle">PROJECT NAME</h3>
           </a>
         </div>
-
-      <!-- TEAM 8-->
-      <div class="col-right">
+        <!-- TEAM 8-->
+        <div class="card">
           <a href="https://github.com/">
-              <img onmouseover="opacityLow(this)" onmouseout="opacityFull(this)" class="thumbnail-img" src="assets/Thumbnail.png"></br>
-              <h3 class="thumbnail-subtitle" onmouseover="turnPink(this)" onmouseout="turnWhite(this)">PROJECT NAME</h3>
-          </a>   
+            <img class="thumbnail-img" src="assets/Thumbnail.png">
+            <h3 class="thumbnail-subtitle">PROJECT NAME</h3>
+          </a>
+        </div>
       </div>
-    </div>
+    </main>
+    <footer></footer>
+  </div>
+</body>
 
-  </body>
 </html>
